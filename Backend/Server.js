@@ -9,4 +9,4 @@ app.get("/",(req,res)=>{
 })
 app.listen(PORT,(req,res)=>{
     console.log(`Sever running on PORT no ${PORT}`);
-})
+}) 
