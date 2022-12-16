@@ -5,15 +5,22 @@
   "main": "Server.js",
   "scripts": {
     "start": "node backend/Server.js",
-    "backend": "nodemon backend/Server.js"
+    "backend": "nodemon backend/Server.js",
+    "frontend": "npm start --prefix frontend",
+    "both": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "env": "^0.0.2",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0"
   },
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "nodemon": "^2.0.20"
   }
 }
